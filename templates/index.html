@@ -4,41 +4,84 @@
     <meta charset="UTF-8">
     <title>Abdullah Al Asmi | Vision 2040</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <h1>👨‍💻 Abdullah Al Asmi</h1>
-        <p>Cloud Innovator | Tech for Oman Vision 2040</p>
-    </header>
+    <nav>
+        <div class="logo">🛰️ Abdullah</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#vision">Vision 2040</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="intro">
-        <h2>🚀 About Me</h2>
-        <p>I’m a software engineer from UTAS Al-Mussanah, passionate about cloud computing, digital transformation, and building solutions aligned with Oman Vision 2040.</p>
+    <section class="hero">
+        <h1>Hi, I'm Abdullah Al Asmi</h1>
+        <p>Cloud Computing Enthusiast | Software Engineer | Vision 2040 Contributor</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn">Download CV</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
     </section>
 
-    <section class="projects">
+    <section id="about" class="section">
+        <h2>🚀 About Me</h2>
+        <p>I’m a software engineer at UTAS Al-Mussanah, building smart and scalable tech solutions that support Oman’s digital future. I specialize in cloud computing, Python, and building AI-powered applications.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>🛠️ Skills</h2>
+        <div class="skills-grid">
+            <div>☁️ Cloud Services (Azure, Firebase)</div>
+            <div>🐍 Python & Flask</div>
+            <div>🧠 AI & Data Analysis</div>
+            <div>🔐 Cybersecurity Basics</div>
+            <div>🛢️ SQL Databases</div>
+            <div>🐧 Linux Fundamentals</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
         <h2>💡 Projects</h2>
         <div class="card">
-            <h3>Ru’ya: AI Cold Chain Management</h3>
-            <p>An IoT and AI-driven platform ensuring temperature-sensitive logistics across Oman using smart cloud monitoring.</p>
+            <h3>Ru’ya – Cold Chain Management</h3>
+            <p>AI and IoT platform to monitor temperature-sensitive goods across Oman — leveraging cloud for real-time analytics.</p>
+            <button class="btn">View Demo</button>
         </div>
         <div class="card">
-            <h3>Cloud-Based Learning System</h3>
-            <p>A platform to deliver personalized AI-powered learning to university students via scalable cloud infrastructure.</p>
+            <h3>CloudEdu – AI Learning System</h3>
+            <p>An intelligent learning platform using cloud infrastructure to personalize education experiences for Omani students.</p>
+            <button class="btn">GitHub</button>
         </div>
     </section>
 
-    <section class="vision">
-        <h2>🌍 How I Support Oman Vision 2040</h2>
+    <section id="vision" class="section">
+        <h2>🌍 Oman Vision 2040</h2>
         <ul>
-            <li>🔧 Empowering digital infrastructure via cloud computing</li>
-            <li>📈 Supporting knowledge-based economy through tech education</li>
-            <li>💡 Innovating with AI & IoT to serve national sustainability goals</li>
+            <li>📶 Supporting digital transformation</li>
+            <li>🧑‍🎓 Training future-ready tech talent</li>
+            <li>💡 Contributing to smart national platforms</li>
         </ul>
     </section>
 
+    <section id="contact" class="section">
+        <h2>📬 Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
     <footer>
-        <p>© 2025 Abdullah Al Asmi</p>
+        <p>Made with ❤️ in Oman | &copy; 2025 Abdullah Al Asmi</p>
+        <div class="social">
+            <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Email</a>
+        </div>
     </footer>
 </body>
 </html>
